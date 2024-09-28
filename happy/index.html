@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>祝福谭美霖生日快乐</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000; /* 设置背景颜色 */
+            text-align: center;
+            padding: 50px;
+            color: white;
+            overflow: auto; /* 允许滚动 */
+            background-image: url('F:/happy/微信图片_202409251936541.jpg'), url('F:/happy/微信图片_202409251936561.jpg');
+            background-size: cover; /* 使背景图片覆盖整个屏幕 */
+        }
+        /* 添加图片样式 */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 200px; /* 设置图片宽度 */
+            height: auto; /* 自适应高度 */
+            margin: 10px; /* 图片间距 */
+            border-radius: 10px; /* 圆角效果 */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 阴影效果 */
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .blessings {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        p {
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            color: white;
+            background-color: #ff69b4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.8em;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>谭同学生日快乐啊</h1>
+    <div class="blessings" id="blessings">
+        <!-- 去掉了这行 -->
+        <!-- <p>点击下方按钮获取祝福语！</p> -->
+    </div>
+    
+    <!-- 将按钮放在祝福语下面 -->
+    <button onclick="generateBlessings()">太low了，下一个祝福</button>
+    
+    <!-- 添加视频 -->
+    <video width="600" controls>
+        <source src="F:/happy/video.mp4" type="video/mp4">
+        您的浏览器不支持视频标签。
+    </video>
+    
+    <!-- 添加图片展示 -->
+    <div class="image-gallery">
+        <!-- 删除了以下图片 -->
+        <!-- <img src="F:/happy/微信图片_20240925193654.jpg" alt="图片1"> -->
+        <!-- <img src="F:/happy/微信图片_20240925193655.jpg" alt="图片2"> -->
+        <!-- <img src="F:/happy/微信图片_20240925193656.jpg" alt="图片3"> -->
+        <!-- <img src="F:/happy/微信图片_20240925193657.jpg" alt="图片4"> -->
+        <!-- <img src="F:/happy/微信图片_20240925193658.jpg" alt="图片5"> -->
+        <!-- <img src="F:/happy/微信图片_202409251936541.jpg" alt="图片6"> -->
+    </div>
+    
+    <!-- 添加音频播放 -->
+    <div class="audio-gallery">
+        <audio controls>
+            <source src="F:/happy/d704ea70d6cf48f7b9b9b779f71e5c0e.mp3" type="audio/mpeg">
+            您的浏览器不支持音频标签。
+        </audio>
+        <audio controls>
+            <source src="F:/happy/99ed45fc484146fc9d8b081f94925b9e.mp3" type="audio/mpeg">
+            您的浏览器不支持音频标签。
+        </audio>
+        <audio controls>
+            <source src="F:/happy/a4667bcd1ccf4e5aa24d8e8294333c03.mp3" type="audio/mpeg">
+            您的浏览器不支持音频标签。
+        </audio>
+        <audio controls>
+            <source src="F:/happy/aa16c051b8664317bb5f9d338c83d125.mp3" type="audio/mpeg">
+            您的浏览器不支持音频标签。
+        </audio>
+        <audio controls>
+            <source src="F:/happy/b210e178261e4f7392a233c6d4b6fce0.mp3" type="audio/mpeg">
+            您的浏览器不支持音频标签。
+        </audio>
+        <audio controls>
+            <source src="F:/happy/d11e44bdacd24f0bb5d30da04b4bc0ff.mp3" type="audio/mpeg">
+            您的浏览器不支持音频标签。
+        </audio>
+    </div>
+    
+    <!-- 添加放大的图片 -->
+    <img src="F:/happy/aded6408018ccf19f1056d1fe7c98d91.jpg" alt="放大的图片" style="width: 100%; max-width: 800px; margin-top: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+    
+    <footer>
+        © 2024 ab出版社
+    </footer>
+
+    <script>
+        const blessings = [
+            "祝你生日快乐，愿你的每一天都充满阳光！",
+            "愿你的生活像这美丽的花朵一样绚烂多彩！",
+            "祝你在新的一岁里，心想事成，万事如意！",
+            "愿你拥有无尽的快乐和幸福！",
+            "祝你在未来的日子里，笑口常开，幸福常伴！",
+            "愿你的每一个梦想都能实现！",
+            "祝你在新的一岁里，健康快乐每一天！",
+            "愿你的人生如同这生日蛋糕，甜蜜而美好！",
+            "祝你拥有一个充满爱与温暖的生日！",
+            "愿你在新的一岁里，勇敢追求自己的梦想！",
+            "祝你每一天都能感受到幸福的滋味！",
+            "愿你的人生旅程充满精彩与惊喜！",
+            "祝你在新的一岁里，收获更多的友谊！",
+            "愿你永远保持一颗年轻的心！",
+            "祝你在未来的日子里，心情愉快，万事如意！",
+            "愿你每天都能遇到美好的事情！",
+            "祝你在新的一岁里，勇敢面对生活的挑战！",
+            "愿你的人生如同这美丽的星空，璀璨夺目！",
+            "祝你在新的一岁里，收获更多的快乐！",
+            "愿你每一天都能感受到爱与被爱的幸福！",
+            "祝你在新的一岁里，拥有更多的成功与成就！",
+            "愿你的生活如同这美丽的花园，五彩缤纷！",
+            "祝你在未来的日子里，心想事成，幸福常伴！",
+            "愿你在新的一岁里，拥有更多的快乐时光！",
+            "祝你在每一个生日都能感受到特别的爱！",
+            "愿你的人生如同这美丽的旋律，动人心弦！",
+            "祝你在新的一岁里，拥有更多的美好回忆！",
+            "愿你每天都能遇到值得珍惜的人！",
+            "祝你在未来的日子里，心情愉快，笑容常在！",
+            "愿你在新的一岁里，拥有更多的幸福与快乐！",
+            "祝你在每一个生日都能感受到无尽的祝福！",
+            "愿你的生活如同这美丽的画卷，色彩斑斓！",
+            "祝你在新的一岁里，勇敢追求自己的梦想！",
+            "愿你每天都能感受到生活的美好！",
+            "祝你在未来的日子里，拥有更多的快乐与幸福！",
+            "愿你的人生如同这美丽的阳光，温暖而明亮！",
+            "祝你在新的一岁里，收获更多的友谊与爱！",
+            "愿你每天都能遇到值得珍惜的瞬间！",
+            "祝你在未来的日子里，心情愉快，幸福常伴！",
+            "愿你在新的一岁里，拥有更多的成功与成就！",
+            "祝你在每一个生日都能感受到特别的爱！",
+            "愿你的生活如同这美丽的花园，五彩缤纷！",
+            "祝你在新的一岁里，拥有更多的快乐时光！",
+            "愿你每天都能感受到爱与被爱的幸福！",
+            "祝你在未来的日子里，心想事成，幸福常伴！",
+            "愿你的人生如同这美丽的星空，璀璨夺目！",
+            "祝你在新的一岁里，勇敢面对生活的挑战！",
+            "愿你每天都能遇到美好的事情！",
+            "祝你在新的一岁里，收获更多的快乐！",
+            "愿你每一天都能感受到幸福的滋味！",
+            "祝你在未来的日子里，心情愉快，万事如意！",
+            "愿你的人生如同这生日蛋糕，甜蜜而美好！",
+            "祝你拥有一个充满爱与温暖的生日！",
+            "愿你在新的一岁里，勇敢追求自己的梦想！",
+            "祝你每一天都能感受到幸福的滋味！",
+            "愿你的人生如同这美丽的旋律，动人心弦！"
+        ];
+
+        function generateBlessings() {
+            const randomBlessings = [];
+            const usedIndexes = new Set();
+
+            while (randomBlessings.length < 5) {
+                const randomIndex = Math.floor(Math.random() * blessings.length);
+                if (!usedIndexes.has(randomIndex)) {
+                    usedIndexes.add(randomIndex);
+                    randomBlessings.push(blessings[randomIndex]);
+                }
+            }
+
+            // 直接显示5句祝福语
+            document.getElementById('blessings').innerHTML = randomBlessings.map(b => `<p>${b}</p>`).join('');
+        }
+
+        // 在页面加载时生成祝福语
+        window.onload = generateBlessings;
+    </script>
+</body>
+</html>
